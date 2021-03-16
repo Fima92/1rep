@@ -1,0 +1,1664 @@
+{
+	"info": {
+		"_postman_id": "e10e0f26-a5e3-4a94-a60a-1161c902b5fc",
+		"name": "Boundary values Age",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Europe",
+			"item": [
+				{
+					"name": "age_Europe 0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 18",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "18",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 17",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 16",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "16",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 19",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 48",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "48",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 49",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "49",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 50",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 51",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 99",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "99",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 100",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_Europe 101",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "101",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_europe",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USA",
+			"item": [
+				{
+					"name": "age_usa 0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 19",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'underage'\r",
+									"\r",
+									"pm.test(\"Age type underage\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 20",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 21",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 22",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 48",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "48",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 49",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'adult'\r",
+									"\r",
+									"pm.test(\"Age type adult\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "49",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 50",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 51",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 99",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "99",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 100",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa 101",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var respAge = respData.age\r",
+									"var reqAge = reqData.age\r",
+									"\r",
+									"pm.test(\"Age = Age\", function () {\r",
+									"    pm.expect (reqAge).eql(reqAge);\r",
+									"});\r",
+									"\r",
+									"var reqData = request.data\r",
+									"var respData = JSON.parse(responseBody)\r",
+									"var AgeType = respData.age_type\r",
+									"var respType = 'antiquity'\r",
+									"\r",
+									"pm.test(\"Age type antiquity\", function () {\r",
+									"    pm.expect (AgeType).eql(respType);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "101",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://116.203.27.46:5002/age_usa",
+							"protocol": "http",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
